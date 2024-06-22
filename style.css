@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* minhas fontes do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* minhas variáveis */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive; /* escrita a mão */
+}
+
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em; /* tamanho padrão */
+}
+
+/* tags gerais */
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+/* cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7.5vw;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* conteúdo principal */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(136, 136, 136);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+
+    /* essa configuração serve para as duas imagens */
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+}
+
+/* rodapé */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+footer a {
+    font-style: normal;
+}
